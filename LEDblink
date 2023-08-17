@@ -1,5 +1,5 @@
 #include <AT89S52.h>//header file
-#define LED P2_0 
+#define LED P2_0 //defining led pin
 void delay(int);//declaration of delay
 void main(){ //main function for blink
 

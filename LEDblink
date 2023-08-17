@@ -1,0 +1,19 @@
+#include <AT89S52.h>
+#define LED P2_0
+void delay(int);
+void main(){
+
+while(1){
+LED=!LED;
+delay(100);
+}
+}
+
+void delay(int time)
+{
+int i,j;
+for( i=0;i<time;i++){
+for(j=0;j<1275;j++)
+{
+
+}

@@ -1,15 +1,15 @@
-#include <AT89S52.h>
-#define LED P2_0
-void delay(int);
-void main(){
+#include <AT89S52.h>//header file
+#define LED P2_0 
+void delay(int);//declaration of delay
+void main(){ //main function for blink
 
 while(1){
 LED=!LED;
-delay(100);
+delay(100);//delay for 100ms
 }
 }
 
-void delay(int time)
+void delay(int time)//delay function
 {
 int i,j;
 for( i=0;i<time;i++){

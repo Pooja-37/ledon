@@ -1,6 +1,6 @@
-#include<AT89S52.h>
+#include<AT89S52.h>//Header file
 #define LED P2_0
-void main(){
+void main(){//funtion for LED on
 LED=0;
 while(1){
 }

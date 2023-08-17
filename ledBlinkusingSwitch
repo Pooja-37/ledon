@@ -1,10 +1,10 @@
-#include<AT89S52.h>
-#define LED P2_0
-#define SW P3_7
-void delay(int);
-void main()
+#include<AT89S52.h>//Header file
+#define LED P2_0//defining led pin
+#define SW P3_7//defining switch pin
+void delay(int);//declaration of delay
+void main()//main function for led blink using switch
 {
-LED=1;
+LED=1;//initializing led pin to 1
  while(1)
  {
   if(SW==0)
@@ -18,12 +18,13 @@ LED=1;
   }
  }
 }
-void delay(int time)
+void delay(int time)//delay function
 {
 int i,j;
-for( i=0;i<time;i++){
-for(j=0;j<1275;j++)
-{
-}
-}
+ for( i=0;i<time;i++)
+ {
+  for(j=0;j<1275;j++)
+   {
+   }
+ }
 }

@@ -1,9 +1,9 @@
 
-#include<AT89S52.h>
-#define LED P2_0
-#define SW P3_7
+#include<AT89S52.h>//Header file
+#define LED P2_0//defining led pin
+#define SW P3_7//defining switch pin
 
-void main()
+void main()//main function for led ON
 {
 LED=0;
  while(1)
